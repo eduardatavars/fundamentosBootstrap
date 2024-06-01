@@ -11,6 +11,14 @@
         table {
             max-width: 500px;
         }
+
+        body {
+            padding: 80px;
+        }
+
+        #preco p {
+            width: 300px;
+        }
     </style>
 </head>
 
@@ -119,6 +127,30 @@
                 </div>
             </div>
         </div>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta2">
+                    Pergunta 2
+                </button>
+            </div>
+            <div id="resposta2" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    Resposta da pergunta 2
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#preco">
+        Ver preço
+    </button>
+    <div id="preco" class="collapse collapse-horizontal">
+        <p>
+            3x de R$ 300,00
+        </p>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
